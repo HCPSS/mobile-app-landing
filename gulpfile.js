@@ -11,7 +11,7 @@ const gulp = require('gulp'),
 const assets = 'assets';
 
 // task variables
-var sassInput = 'scss/**/*.scss';
+var sassInput = 'scss/*.scss';
 var sassOutput = 'css';
 var sassOptions = {
   errLogToConsole: true,
@@ -59,4 +59,4 @@ gulp.task('watch', () => {
   /*gulp.watch('js/script.js', ['script']);*/
 })
 
-gulp.task('default', ['delete', 'sass', 'style', 'script1', 'script2', 'watch'])
+gulp.task('default', ['delete', 'sass', 'style', 'watch'])
