@@ -82,7 +82,7 @@ main#mobile-applications {
 
 .jumbo-nav__inner-image {
   float:left;
-    @media screen and (max-width: 525px) {
+    @media screen and (max-width: 700px) {
       width: 100%;
       margin-bottom: 1em;
       margin-right: 0;
@@ -115,7 +115,7 @@ main#mobile-applications {
 .jumbo-nav__collapsable {
   @media screen and (max-width: 700px) {     
     max-height: 0;
-    transition: max-height 1s linear;    
+    transition: max-height 0.8s linear;    
   }
   & li { list-style: none; }
 }
@@ -131,7 +131,7 @@ main#mobile-applications {
 
 #jumbo-nav--toggle:checked ~ .jumbo-nav__collapsable li {
   padding-top: 10px;
-  transition: opacity 0.4s ease-in;   
+  transition: opacity 0.4s ease-in 0.2s;   
   opacity: 1;
 }
 
@@ -144,10 +144,7 @@ main#mobile-applications {
   }  
 }
 
-#jumbo-nav--toggle:checked ~ .jumbo-nav__inner--toggle-btn:after { 
-  transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);  
-}
+
 
 h2.heading--light {
   font-weight: $font-weight--light;
