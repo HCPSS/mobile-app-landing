@@ -12,58 +12,95 @@
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="http://s3.amazonaws.com/hcpss.web.site/fonts/fira.css">
 <link rel="stylesheet" type="text/css" href="http://s3.amazonaws.com/hcpss.web.site/images/hcpss-2016-07-13c.css">
-<link rel="stylesheet" type="text/css" href="./a.css">
+<link rel="stylesheet" type="text/css" href="./main.min.css">
 
 </head>
 
-<body style="background:none;background-color: rgba(0, 0, 0, 0.75);" cz-shortcut-listen="true">
+<body cz-shortcut-listen="true">
 
-<main id="mobile-applications" style="color:white;">
-    <header class="contents">  
-      <div style="background-color: rgb(82, 82, 82);box-shadow: 0px 9px 62px -40px rgba(0, 0, 0, 0.34);/* position: fixed; *//* overflow: visible; */" class="contents hero-heading">
-      <h1 style="color:white;vertical-align: middle; width: 90%; margin-left: auto; margin-right: auto; text-align: center;"><img itemprop="logo" src="http://s3.amazonaws.com/hcpss.web.site/images/hcpss-logo-outlined.png" height="60" width="60" alt="" style="vertical-align: bottom;float: left;" /> HCPSS Mobile Applications</h1>
-      </div>
-    </header>
-
-    <section style="padding-top: 8em;background-color: rgba(74, 74, 74, 0.33);box-shadow: 0px 9px 62px -40px rgba(0, 0, 0, 0.28);">
-      <div style="width:80%;margin-left:auto;margin-right:auto;height: 700px;">
-        <div class="two-thirds--first">
-          <h2 style="/* margin-top: 5em; */font-weight: 200;font-size: 2.8em;">News and Events Application</h2>
-            <p class="p__checkmark-icon" style="font-size: 1.5em;font-weight: 300;"><i class="fa fa-check-square" aria-hidden="true"></i> Stay up to date with school news and events with customized news feeds</p>
-            <p class="p__checkmark-icon" style="font-size: 1.5em;font-weight: 300;"><i class="fa fa-check-square" aria-hidden="true"></i> Quickly view school contact information</p>
-            <p class="p__checkmark-icon" style="font-size: 1.5em;font-weight: 300;"><i class="fa fa-check-square" aria-hidden="true"></i> Easily find our social media accounts</p>
-              <div class="contents">
-                <div class="ios-btn-small">
-                  <img src="./iphone-badge.png">
-                </div>
-                <div class="android-btn-small">
-                  <img src="./google-badge.png">
-                </div>
-              </div>
+<main id="mobile-applications">
+    <nav class="jumbo-nav jumbo-nav--fixed">
+      <div class="jumbo-nav__inner">
+        <input class="second-state" type="checkbox" name="jumbo-nav-state" id="jumbo-nav--toggle" autocomplete="off">
+        <div class="jumbo-nav__inner-image">
+          <a href="http://www.hcpss.org/" target="_blank">
+            <img class="jumbo-nav__inner-image--logo" itemprop="logo" src="./hoco-logo-flame.png" alt="">
+          </a>
         </div>
-        <div class="thirds" style="text-align:center;">
+          
+        <h2>HCPSS Mobile Applications</h2>
+
+        <section class="jumbo-nav__inner-label">
+          <label class="jumbo-nav__inner--toggle-btn" tabindex="0" for="jumbo-nav--toggle">
+            <span class="jumbo-nav__inner--hidden">Secondary Navigation</span>
+          </label>
+        </section>
+          
+        <ul class="jumbo-nav__collapsable">
+          <li><a href="/health/allergies/">News App</a></li>
+          <li><a href="/health/diabetes/">Nutrislice</a></li>
+          <li><a href="/health/immunizations/">Canvas</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="section__jumbo section__jumbo--one">
+      <div class="section__jumbo-inner">
+        <div class="two-thirds--first section__jumbo-inner--top-gutter">
+          <h2 class="heading--light">News and Events App</h2>
+            <p class="p__checkmark-icon"><i class="fa fa-check-square" aria-hidden="true"></i> Stay up to date with school news and events with customized news feeds</p>
+            <p class="p__checkmark-icon"><i class="fa fa-check-square" aria-hidden="true"></i> Quickly view school contact information</p>
+            <p class="p__checkmark-icon"><i class="fa fa-check-square" aria-hidden="true"></i> Easily find our social media accounts</p>
+              <div class="app-store__group">
+                <a class="app-store__ios-btn--small" href="https://itunes.apple.com/us/app/howard-county-public-school/id927714114?ls=1&mt=8" target="_blank"></a>
+                <a class="app-store__android-btn--small" href="https://play.google.com/store/apps/details?id=com.relianceco.cma.howard" target="_blank"></a>
+              </div>  
+        </div>
+        <div class="thirds iphone-img iphone-img--centered-right">
           <img src="./black-iphone-news.png" />
         </div>
+        <div class="fixed-chevron-scroll"><i class="fa fa-chevron-down" aria-hidden="true"></i></div>        
       </div>
     </section>
 
-    <section style="padding-top: 8em;box-shadow: 0px 9px 62px -40px rgba(0,0,0,0.49);">
-      <div style="width:80%;margin-left:auto;margin-right:auto;height: 700px;">   
-        <div class="two-thirds--last">
-          <h2 style="font-weight:200;font-size: 2.8em;">Nutrislice Application</h2>
-            <p style="font-size: 1.5em;font-weight: 300;"><i class="fa fa-check-square" aria-hidden="true"></i> View meal choices at every HCPSS school</p>
-            <p style="font-size: 1.5em;font-weight: 300;"><i class="fa fa-check-square" aria-hidden="true"></i> View meal choices at every HCPSS school</p>            
-            <p style="font-size: 1.5em;font-weight: 300;"><i class="fa fa-check-square" aria-hidden="true"></i> View nutrition and allergen information</p>          
+    <section class="section__jumbo section__jumbo--two">
+      <div class="section__jumbo-inner">   
+        <div class="two-thirds--last section__jumbo-inner--top-gutter">
+          <h2 class="heading--light">Nutrislice</h2>
+            <p class="p__checkmark-icon"><i class="fa fa-check-square" aria-hidden="true"></i> View meal choices from every HCPSS school</p>
+            <p class="p__checkmark-icon"><i class="fa fa-check-square" aria-hidden="true"></i> Research nutrition and allergen information</p> 
+              <div class="app-store__group">
+                <a class="app-store__ios-btn--small" href="https://play.google.com/store/apps/details?id=com.nutrislice.schoollunch&hl=en" target="_blank"></a>
+                <a class="app-store__android-btn--small" href="https://itunes.apple.com/us/app/school-lunch-by-nutrislice/id567183091?mt=8" target="_blank"></a>
+              </div>                   
         </div>
-        <div class="thirds" style="text-align:center;">
-          <img style="margin-left: 0;" src="./white-iphone-shadow.png" />
+        <div class="thirds iphone-img iphone-img--centered-left iphone-img--top-gutter">
+          <img src="./white-iphone-shadow.png" />
         </div>
       </div>    
     </section>
+
+    <section class="section__jumbo section__jumbo--three">
+      <div class="section__jumbo-inner">
+        <div class="two-thirds--first section__jumbo-inner--top-gutter">
+          <h2 class="heading--light">Canvas</h2>
+            <p class="p__checkmark-icon"><i class="fa fa-check-square" aria-hidden="true"></i> See your child's grades and courses</p>
+            <p class="p__checkmark-icon"><i class="fa fa-check-square" aria-hidden="true"></i> Submit assignments and view lesson content</p>
+            <p class="p__checkmark-icon"><i class="fa fa-check-square" aria-hidden="true"></i> Send and receive messages from your child's teachers</p>
+              <div class="app-store__group">
+                <a class="app-store__ios-btn--small" href="https://itunes.apple.com/us/app/canvas-by-instructure/id480883488?mt=8" target="_blank"></a>
+                <a class="app-store__android-btn--small" href="https://play.google.com/store/apps/details?id=com.instructure.candroid&hl=en" target="_blank"></a>
+              </div>
+        </div>
+        <div class="thirds iphone-img iphone-img--centered-right iphone-img--top-gutter">
+          <img src="./black-iphone-canvas.png" />
+        </div>
+      </div>
+    </section>    
 </main>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js?ver=4.5.3"></script>
 
-<script type="text/javascript" src="http://s3.amazonaws.com/hcpss.web.site/images/hcpss-2016-06-21.min.js?ver=4.5.3"></script>
+<script type="text/javascript" src="./script.js"></script>
 
 </body></html>

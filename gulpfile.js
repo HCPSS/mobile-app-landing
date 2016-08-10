@@ -11,7 +11,7 @@ const gulp = require('gulp'),
 const assets = 'assets';
 
 // task variables
-var sassInput = 'scss/*.scss';
+var sassInput = 'scss/**/*.scss';
 var sassOutput = 'css';
 var sassOptions = {
   errLogToConsole: true,

@@ -1,0 +1,116 @@
+body {
+  background: none;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+main#mobile-applications {
+  color: white;
+}
+
+.header__jumbo {
+  background-color: #525252;
+  box-shadow: 0px 9px 39px -31px rgba(0, 0, 0, 0.34);
+}
+
+.header__jumbo h1 {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 3em;
+  font-weight: 300;
+  color: white;
+}
+
+@media screen and (max-width: 750px) {
+  .header__jumbo h1 {
+    font-size: 2.6em;
+    text-align: center;
+  }
+}
+
+.header__jumbo-text {
+  text-align: center;
+  display: block;
+}
+
+@media screen and (max-width: 750px) {
+  .header__jumbo-text {
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+.header__jumbo-image {
+  float: left;
+}
+
+@media screen and (max-width: 750px) {
+  .header__jumbo-image {
+    float: none;
+    margin-bottom: 0.5em;
+  }
+}
+
+h2.heading--light {
+  font-weight: 200;
+  font-size: 2.8em;
+}
+
+@media screen and (max-width: 750px) {
+  h2.heading--light {
+    font-size: 2.4em;
+  }
+}
+
+.section__jumbo {
+  padding-top: 4em;
+  box-shadow: 0px 9px 39px -31px rgba(0, 0, 0, 0.34);
+}
+
+@media screen and (max-width: 750px) {
+  .section__jumbo {
+    padding-top: 2em;
+  }
+}
+
+.section__jumbo--first {
+  background-color: rgba(92, 92, 92, 0.33);
+}
+
+.section__jumbo--second {
+  background-color: rgba(72, 72, 72, 0.33);
+}
+
+.section__jumbo-inner {
+  height: 700px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 750px) {
+  .section__jumbo-inner {
+    height: 100%;
+  }
+}
+
+.p__checkmark-icon {
+  font-size: 1.6em;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 750px) {
+  .p__checkmark-icon {
+    height: 100vh;
+  }
+}
+
+.ios-btn-small {
+  width: 200px;
+}
+
+.android-btn-small {
+  width: 200px;
+}
+
+/*# sourceMappingURL=maps/index.css.map */

@@ -1,9 +1,475 @@
-.ios-btn-small {
-  width: 200px;
+body {
+  background: none;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
-.android-btn-small {
-  width: 200px;
+main#mobile-applications {
+  color: white;
+}
+
+.header__jumbo h1 {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2em;
+  font-weight: 300;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .header__jumbo h1 {
+    text-align: center;
+    font-size: 1.6em;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .header__jumbo h1 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1401px) {
+  .header__jumbo h1 {
+    width: 68%;
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1400px) {
+  .header__jumbo h1 {
+    width: 74%;
+  }
+}
+
+.header__jumbo-text {
+  text-align: center;
+  display: block;
+}
+
+@media screen and (max-width: 750px) {
+  .header__jumbo-text {
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+.jumbo-nav {
+  width: 100%;
+  display: block;
+  border-bottom: none;
+}
+
+.jumbo-nav a {
+  color: white;
+  vertical-align: sub;
+}
+
+.jumbo-nav h2 {
+  text-align: center;
+  margin: 0.67em;
+  color: white;
+}
+
+.jumbo-nav ul {
+  border-bottom: none;
+  -webkit-margin-before: 0em;
+}
+
+@media screen and (max-width: 525px) {
+  .jumbo-nav {
+    display: inline-table;
+  }
+}
+
+.jumbo-nav--fixed {
+  z-index: 99;
+  background-color: #525252;
+  position: fixed;
+}
+
+.jumbo-nav__inner {
+  width: 88%;
+  margin: 0 auto;
+}
+
+#jumbo-nav--toggle {
+  position: absolute;
+  left: -10000px;
+}
+
+.jumbo-nav__inner--hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.jumbo-nav__inner-image {
+  float: left;
+}
+
+@media screen and (max-width: 525px) {
+  .jumbo-nav__inner-image {
+    width: 100%;
+    margin-bottom: 1em;
+    margin-right: 0;
+    text-align: center;
+  }
+}
+
+.jumbo-nav__inner-image--logo {
+  height: 40px;
+  width: 40px;
+  margin-top: 0.5em;
+}
+
+.jumbo-nav__inner-label {
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .jumbo-nav__inner--toggle-btn:after {
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition-duration: 0.7s;
+    font-size: 1.3125em;
+    font-family: FontAwesome;
+    font-weight: 300;
+    content: "\f078";
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .jumbo-nav__collapsable {
+    max-height: 0;
+    transition: max-height 1s linear;
+  }
+}
+
+.jumbo-nav__collapsable li {
+  list-style: none;
+}
+
+@media screen and (max-width: 700px) {
+  #jumbo-nav--toggle:checked ~ .jumbo-nav__collapsable {
+    display: block;
+    max-height: 400px;
+    transition: max-height 1s linear;
+    overflow: initial;
+  }
+}
+
+#jumbo-nav--toggle:checked ~ .jumbo-nav__collapsable li {
+  padding-top: 10px;
+  transition: opacity 0.4s ease-in;
+  opacity: 1;
+}
+
+#jumbo-nav--toggle:not(:checked) ~ .jumbo-nav__collapsable li {
+  padding-top: 10px;
+  transition: opacity 0.4s ease-out;
+  opacity: 0;
+}
+
+@media screen and (min-width: 700px) {
+  #jumbo-nav--toggle:not(:checked) ~ .jumbo-nav__collapsable li {
+    opacity: 1;
+  }
+}
+
+#jumbo-nav--toggle:checked ~ .jumbo-nav__inner--toggle-btn:after {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}
+
+h2.heading--light {
+  font-weight: 200;
+  font-size: 2.8em;
+}
+
+@media screen and (max-width: 750px) {
+  h2.heading--light {
+    text-align: center;
+    font-size: 2.4em;
+  }
+}
+
+.section__jumbo {
+  box-shadow: 0 8px 30px -15px rgba(0, 0, 0, 0.63);
+}
+
+@media screen and (max-width: 750px) {
+  .section__jumbo {
+    padding-top: 0.4em;
+  }
+}
+
+.section__jumbo--one {
+  padding-top: 140px;
+  background-color: rgba(92, 92, 92, 0.33);
+}
+
+@media screen and (min-width: 750px) {
+  .section__jumbo--one {
+    padding-top: 80px;
+  }
+}
+
+.section__jumbo--two {
+  background-color: rgba(72, 72, 72, 0.33);
+}
+
+.section__jumbo--three {
+  background-color: rgba(52, 52, 52, 0.33);
+}
+
+.section__jumbo-inner {
+  height: 600px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1401px) {
+  .section__jumbo-inner {
+    width: 68%;
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1400px) {
+  .section__jumbo-inner {
+    width: 74%;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  .section__jumbo-inner {
+    height: 520px;
+  }
+}
+
+@media screen and (min-width: 686px) and (max-width: 799px) {
+  .section__jumbo-inner {
+    height: 460px;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 685px) {
+  .section__jumbo-inner {
+    height: 820px;
+  }
+}
+
+@media screen and (min-width: 810px) and (max-width: 1000px) {
+  .section__jumbo-inner--top-gutter {
+    padding-top: 1em;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .section__jumbo-inner--top-gutter {
+    padding-top: 2em;
+  }
+}
+
+.p__checkmark-icon {
+  font-size: 1.6em;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 841px) and (max-width: 1000px) {
+  .p__checkmark-icon {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .p__checkmark-icon {
+    font-size: 1.2em;
+  }
+}
+
+.fixed-chevron-scroll i {
+  width: 100%;
+  bottom: 180px;
+  text-align: center;
+  font-size: 2em;
+  font-family: FontAwesome;
+  font-weight: 300;
+  content: "\f078";
+  visibility: visible;
+  -webkit-animation: bounce 1s ease-out;
+  -moz-animation: bounce 800ms ease-out;
+  -o-animation: bounce 800ms ease-out;
+  animation: bounce 1s ease-out;
+  -webkit-animation-iteration-count: 3;
+  animation-iteration-count: 3;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  .fixed-chevron-scroll i {
+    bottom: 260px;
+  }
+}
+
+@media screen and (min-width: 751px) and (max-width: 799px) {
+  .fixed-chevron-scroll i {
+    bottom: 320px;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 750px) {
+  .fixed-chevron-scroll i {
+    bottom: 260px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .fixed-chevron-scroll i {
+    visibility: hidden;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-30%);
+  }
+  50% {
+    transform: translateY(-60%);
+  }
+  75% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.iphone-img img {
+  margin-left: 0;
+}
+
+@media screen and (min-width: 1201px) {
+  .iphone-img img {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+  .iphone-img img {
+    width: 240px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .iphone-img img {
+    width: 220px;
+  }
+}
+
+.iphone-img--top-gutter {
+  padding-top: 1.8em;
+}
+
+.iphone-img--centered-left {
+  text-align: left;
+}
+
+@media screen and (max-width: 740px) {
+  .iphone-img--centered-left {
+    text-align: center;
+  }
+}
+
+.iphone-img--centered-right {
+  text-align: right;
+}
+
+@media screen and (max-width: 740px) {
+  .iphone-img--centered-right {
+    text-align: center;
+  }
+}
+
+.app-store__group {
+  height: 2.6em;
+  width: 36em;
+}
+
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+  .app-store__group {
+    width: 26em;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+  .app-store__group {
+    width: 22em;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .app-store__group {
+    width: 16em;
+    margin: 0 auto;
+  }
+}
+
+.app-store__ios-btn--small {
+  float: left;
+  height: 68px;
+  width: 46%;
+  margin: 0;
+  background: url(./iphone-badge.png) no-repeat;
+  background-size: contain;
+}
+
+@media screen and (min-width: 681px) and (max-width: 1000px) {
+  .app-store__ios-btn--small {
+    height: 60px;
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .app-store__ios-btn--small {
+    height: 50px;
+    width: 40%;
+  }
+}
+
+.app-store__android-btn--small {
+  float: right;
+  height: 68px;
+  width: 46%;
+  margin: 0;
+  background: url(./google-badge.png) no-repeat;
+  background-size: contain;
+}
+
+@media screen and (min-width: 681px) and (max-width: 1000px) {
+  .app-store__android-btn--small {
+    height: 60px;
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .app-store__android-btn--small {
+    height: 50px;
+    width: 40%;
+  }
 }
 
 /*# sourceMappingURL=maps/main.css.map */
