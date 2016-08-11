@@ -1,24 +1,25 @@
 <html lang="en-US"><head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
 <title>Mobile Applications –  HCPSS</title>
-
-<link rel="alternate" type="application/rss+xml" title="Howard County Public School System » Enrollment and Registration Comments Feed" href="http://www.hcpss.org/enroll/feed/">
-<link rel="canonical" href="http://www.hcpss.org/enroll/">
-<link rel="shortlink" href="http://www.hcpss.org/?p=1009">
 
 
 <link rel="stylesheet" type="text/css" href="http://s3.amazonaws.com/hcpss.web.site/images/normalize.css">
+<!--[if gte IE 9]><!-->
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="http://s3.amazonaws.com/hcpss.web.site/fonts/fira.css">
+<!--<![endif]-->
 <link rel="stylesheet" type="text/css" href="http://s3.amazonaws.com/hcpss.web.site/images/hcpss-2016-07-13c.css">
-<link rel="stylesheet" type="text/css" href="./main.min.css">
+<!--[if lte IE 9]><!-->
+<link rel="stylesheet" type="text/css" href="http://www.hcpss.org/f/app/ie.css">
+<!--<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://www.hcpss.org/f/app/main.min.css">
 
 </head>
 
 <body cz-shortcut-listen="true">
 
-<main id="mobile-applications">
+<div id="mobile-applications">
     <nav class="jumbo-nav jumbo-nav--fixed">
       <div class="jumbo-nav__inner">
         <input class="second-state" type="checkbox" name="jumbo-nav-state" id="jumbo-nav--toggle" autocomplete="off">
@@ -28,26 +29,26 @@
           </a>
         </div>
           
-        <h2>HCPSS Mobile Applications</h2>
+        <h1>HCPSS Mobile Applications</h1>
 
-        <section class="jumbo-nav__inner-label">
+        <div class="jumbo-nav__inner-label">
           <label class="jumbo-nav__inner--toggle-btn" tabindex="0" for="jumbo-nav--toggle">
             <span class="jumbo-nav__inner--hidden">Secondary Navigation</span>
           </label>
-        </section>
+        </div>
           
         <ul class="jumbo-nav__collapsable">
-          <li><a href="/health/allergies/">News App</a></li>
-          <li><a href="/health/diabetes/">Nutrislice</a></li>
-          <li><a href="/health/immunizations/">Canvas</a></li>
+          <li><a href="#news">News App</a></li>
+          <li><a href="#nutr">Nutrislice</a></li>
+          <li><a href="#canv">Canvas</a></li>
         </ul>
       </div>
     </nav>
 
-    <section class="section__jumbo section__jumbo--one">
+    <div class="section__jumbo section__jumbo--one">
       <div class="section__jumbo-inner">
         <div class="two-thirds--first section__jumbo-inner--top-gutter">
-          <h2 class="heading--light">News and Events App</h2>
+          <h2 id="news" class="heading--light">News and Events App</h2>
             <p class="p__checkmark-icon"><i class="fa fa-check-square" aria-hidden="true"></i> Stay up to date with school news and events with customized news feeds</p>
             <p class="p__checkmark-icon"><i class="fa fa-check-square" aria-hidden="true"></i> Quickly view school contact information</p>
             <p class="p__checkmark-icon"><i class="fa fa-check-square" aria-hidden="true"></i> Easily find our social media accounts</p>
@@ -61,9 +62,11 @@
         </div>
         <div class="fixed-chevron-scroll"><i class="fa fa-chevron-down" aria-hidden="true"></i></div>        
       </div>
-    </section>
+    </div>
 
-    <section class="section__jumbo section__jumbo--two">
+    <a class="anchor--fixed-nav" id="nutr"></a>
+
+    <div class="section__jumbo section__jumbo--two">
       <div class="section__jumbo-inner">   
         <div class="two-thirds--last section__jumbo-inner--top-gutter">
           <h2 class="heading--light">Nutrislice</h2>
@@ -78,15 +81,17 @@
           <img src="./white-iphone-shadow.png" />
         </div>
       </div>    
-    </section>
+    </div>
 
-    <section class="section__jumbo section__jumbo--three">
+    <a class="anchor--fixed-nav" id="canv"></a>
+
+    <div class="section__jumbo section__jumbo--three">
       <div class="section__jumbo-inner">
         <div class="two-thirds--first section__jumbo-inner--top-gutter">
           <h2 class="heading--light">Canvas</h2>
             <p class="p__checkmark-icon"><i class="fa fa-check-square" aria-hidden="true"></i> See your child's grades and courses</p>
             <p class="p__checkmark-icon"><i class="fa fa-check-square" aria-hidden="true"></i> Submit assignments and view lesson content</p>
-            <p class="p__checkmark-icon"><i class="fa fa-check-square" aria-hidden="true"></i> Send and receive messages from your child's teachers</p>
+            <p class="p__checkmark-icon"><i class="fa fa-check-square" aria-hidden="true"></i> Send messages to your child's teachers</p>
               <div class="app-store__group">
                 <a class="app-store__ios-btn--small" href="https://itunes.apple.com/us/app/canvas-by-instructure/id480883488?mt=8" target="_blank"></a>
                 <a class="app-store__android-btn--small" href="https://play.google.com/store/apps/details?id=com.instructure.candroid&hl=en" target="_blank"></a>
@@ -96,11 +101,13 @@
           <img src="./black-iphone-canvas.png" />
         </div>
       </div>
-    </section>    
-</main>
+    </div>    
+</div>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js?ver=4.5.3"></script>
 
-<script type="text/javascript" src="./script.js"></script>
+<!--[if gte IE 10]><!-->
+<script type="text/javascript" src="http://www.hcpss.org/f/app/script.js"></script>
+<!--<![endif]-->
 
 </body></html>
