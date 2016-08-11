@@ -1,34 +1,11 @@
 body {
-	background:none;
-	background-color: rgba(0, 0, 0, 0.75);
+  background:none;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
-main#mobile-applications {
+#mobile-applications {
 	color:white;
-}
-
-.header__jumbo h1 {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto; 
-  font-size: 2em;
-  font-weight: $font-weight--medium;
-  color: white;	
-    @media screen and (max-width: 600px) { text-align: center; font-size: 1.6em; }
-		@media screen and (min-width: 600px ) and (max-width: 800px) {
-			text-align: center;
-		}
-    @media screen and (min-width: 1401px) { width: 68%; }
-    @media screen and (min-width: 1001px) and (max-width: 1400px) { width: 74%; }
-}
-
-.header__jumbo-text {
-  text-align: center;	
-	display: block;
-  	@media screen and (max-width: 750px) {
-  		width:100%;
-  		display: inline-block;
-  	}
 }
 
 .jumbo-nav {
@@ -39,7 +16,8 @@ main#mobile-applications {
     color: white;
     vertical-align: sub;  
   }
-  & h2 {
+  & h1 {
+    font-size: 1.5em;
     text-align: center;
     margin: 0.30em;
     color: white;
@@ -62,10 +40,14 @@ main#mobile-applications {
 }
 
 .jumbo-nav--fixed {
-  z-index: 99;
-  background-color: rgba(82, 82, 82, 1);  
+  background-color: #525252;
+  -webkit-backface-visibility: hidden;
   position: fixed;
+  box-shadow: rgb(0, 0, 0) 0px 9px 39px -31px;
   box-shadow: rgba(0, 0, 0, 0.341176) 0px 9px 39px -31px;
+    @media screen and (max-width: 750px) { 
+      position: absolute; 
+    }  
 }
 
 .jumbo-nav__inner {
@@ -178,6 +160,7 @@ h2.heading--light {
 }
 
 .section__jumbo {
+  box-shadow: 0 8px 30px -15px rgb(0, 0, 0);  
   box-shadow: 0 8px 30px -15px rgba(0, 0, 0, 0.63); 
   @media screen and (max-width: 750px) {
     padding-top: 0.4em;
@@ -185,12 +168,15 @@ h2.heading--light {
   &--one {
     padding-top: 180px;
     @media screen and (min-width: 750px) { padding-top: 80px; }
+    background-color: rgb(92, 92, 92);
     background-color: rgba(92, 92, 92, 0.33);
   }
   &--two {
+    background-color: rgb(72, 72, 72);    
     background-color: rgba(72, 72, 72, 0.33);
   }
   &--three {
+    background-color: rgb(52, 52, 52);    
     background-color: rgba(52, 52, 52, 0.33);
   }
 }
@@ -327,4 +313,11 @@ h2.heading--light {
       height: 50px;
       width: 40%;
     }  
+}
+
+a.anchor--fixed-nav {
+    display: block;
+    position: relative;
+    top: -180px;
+    visibility: hidden;
 }
