@@ -9,7 +9,7 @@ var $fadeScroll = function(i) {
 	var scrollVar = $(window).scrollTop();
 	if (scrollVar >= 50) {
 			$('.fixed-chevron-scroll').css({
-				'opacity' : '0',
+			'opacity' : '0',
 		    '-webkit-transition' : 'opacity 0.5s',
 		    '-moz-transition' : 'opacity 0.5s',
 		    'transition' : 'opacity 0.5s'			
@@ -40,7 +40,7 @@ var $fadeScroll = function(i) {
 }
 
 function checkSize() {
-	if (window.matchMedia("(max-width: 700px)").matches) {
+	if (window.matchMedia("(max-width: 750px)").matches) {
 		$('.jumbo-nav--fixed').css({'background-color' : 'rgba(82, 82, 82, 1)'})
 		$(window).off("scroll", $fadeScroll);
 	} else {
