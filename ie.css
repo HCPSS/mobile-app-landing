@@ -1,6 +1,6 @@
-body { background-color: rgba(0, 0, 0) }
-#mobile-applications { color: white; }
-h1 { color: black; font-weight: 400; }
+body { background-color: rgba(0, 0, 0); }
+#mobile-applications { color: white; font-weight: 500;}
+h1 { font-weight: 400; }
 .jumbo-nav--fixed { font-weight: 400; background-color: rgb(82, 82, 82) }
 .section__jumbo--one { font-weight: 400; background-color: rgb(92, 92, 92) }
 .section__jumbo--two { font-weight: 400; background-color: rgb(72, 72, 72) }
