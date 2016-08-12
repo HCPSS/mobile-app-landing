@@ -52,6 +52,7 @@ body {
 }
 
 .jumbo-nav--fixed {
+  z-index: 99;
   background-color: #525252;
   -webkit-backface-visibility: hidden;
   position: fixed;
@@ -297,6 +298,10 @@ h2.heading--light {
   }
 }
 
+.fixed-chevron-scroll {
+  height: 20px;
+}
+
 .fixed-chevron-scroll i {
   width: 100%;
   bottom: 180px;
@@ -429,49 +434,39 @@ h2.heading--light {
   }
 }
 
-.app-store__ios-btn--small {
+.app-store__ios-btn--small img {
   float: left;
-  height: 68px;
-  width: 46%;
+  width: 42%;
   margin: 0;
-  background: url(./iphone-badge.png) no-repeat;
-  background-size: contain;
 }
 
 @media screen and (min-width: 681px) and (max-width: 1000px) {
-  .app-store__ios-btn--small {
-    height: 60px;
-    width: 45%;
-  }
-}
-
-@media screen and (max-width: 680px) {
-  .app-store__ios-btn--small {
-    height: 50px;
+  .app-store__ios-btn--small img {
     width: 40%;
   }
 }
 
-.app-store__android-btn--small {
+@media screen and (max-width: 680px) {
+  .app-store__ios-btn--small img {
+    width: 38%;
+  }
+}
+
+.app-store__android-btn--small img {
   float: right;
-  height: 68px;
-  width: 46%;
+  width: 42%;
   margin: 0;
-  background: url(./google-badge.png) no-repeat;
-  background-size: contain;
 }
 
 @media screen and (min-width: 681px) and (max-width: 1000px) {
-  .app-store__android-btn--small {
-    height: 60px;
-    width: 45%;
+  .app-store__android-btn--small img {
+    width: 40%;
   }
 }
 
 @media screen and (max-width: 680px) {
-  .app-store__android-btn--small {
-    height: 50px;
-    width: 40%;
+  .app-store__android-btn--small img {
+    width: 38%;
   }
 }
 

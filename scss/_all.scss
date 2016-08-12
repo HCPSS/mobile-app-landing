@@ -40,6 +40,7 @@ body {
 }
 
 .jumbo-nav--fixed {
+  z-index: 99;
   background-color: #525252;
   -webkit-backface-visibility: hidden;
   position: fixed;
@@ -213,28 +214,31 @@ h2.heading--light {
   }   
 }
 
-.fixed-chevron-scroll i {
-  width: 100%;
-  bottom: 180px;
-  text-align: center;
-  font-size: 2em;
-  font-family: FontAwesome;
-  font-weight: 300;
-  content: "\f078";
-  visibility: visible;
-    -webkit-animation: bounce 1s ease-out;
-    -moz-animation: bounce 800ms ease-out;
-    -o-animation: bounce 800ms ease-out;
-  animation: bounce 1s ease-out;
-    -webkit-animation-iteration-count: 4;
-  animation-iteration-count: 4;
-    -webkit-animation-delay: 1s;
-  animation-delay: 1s;  
-  @media screen and (min-width: 800px) and (max-width: 1200px) { bottom: 260px; } 
-  @media screen and (min-width: 751px) and (max-width: 799px) { bottom: 320px; }  
-  @media screen and (min-width: 701px) and (max-width: 750px) { bottom: 260px; }
-  @media screen and (max-width: 749px) {
-    visibility: hidden;
+.fixed-chevron-scroll {
+  height: 20px;
+  & i {
+    width: 100%;
+    bottom: 180px;
+    text-align: center;
+    font-size: 2em;
+    font-family: FontAwesome;
+    font-weight: 300;
+    content: "\f078";
+    visibility: visible;
+      -webkit-animation: bounce 1s ease-out;
+      -moz-animation: bounce 800ms ease-out;
+      -o-animation: bounce 800ms ease-out;
+    animation: bounce 1s ease-out;
+      -webkit-animation-iteration-count: 4;
+    animation-iteration-count: 4;
+      -webkit-animation-delay: 1s;
+    animation-delay: 1s;  
+    @media screen and (min-width: 800px) and (max-width: 1200px) { bottom: 260px; } 
+    @media screen and (min-width: 751px) and (max-width: 799px) { bottom: 320px; }  
+    @media screen and (min-width: 701px) and (max-width: 750px) { bottom: 260px; }
+    @media screen and (max-width: 749px) {
+      visibility: hidden;
+    }
   }
 }
 
@@ -281,37 +285,27 @@ h2.heading--light {
   }  
 }
 
-.app-store__ios-btn--small {
+.app-store__ios-btn--small img {
   float: left;
-  height: 68px;
-  width: 46%;
+  width: 42%;
   margin: 0;
-  background: url(./iphone-badge.png) no-repeat;
-  background-size: contain;
     @media screen and (min-width: 681px) and (max-width: 1000px) {
-      height: 60px;
-      width: 45%;
+      width: 40%;
     }
     @media screen and (max-width: 680px) {
-      height: 50px;
-      width: 40%;
+      width: 38%;
     }  
 }
 
-.app-store__android-btn--small {
+.app-store__android-btn--small img {
   float: right;
-  height: 68px;
-  width: 46%;
+  width: 42%;
   margin: 0;
-  background: url(./google-badge.png) no-repeat;
-  background-size: contain;
     @media screen and (min-width: 681px) and (max-width: 1000px) {
-      height: 60px;
-      width: 45%;
+      width: 40%;
     }
     @media screen and (max-width: 680px) {
-      height: 50px;
-      width: 40%;
+      width: 38%;
     }  
 }
 
